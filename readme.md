@@ -1,0 +1,1 @@
+This repo contains notes on Information Technology Service Management. Refer to them and feel free to contribute
