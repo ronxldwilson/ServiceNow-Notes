@@ -1,0 +1,143 @@
+####### DAY 1 #########
+
+#ACRONYMS
+ITIL:Information Technology Infrastructure Library
+ITSM: Information Technology Service Managment
+ITSM ATF - Automation Testing Framework
+PDI- Personal Developer Instance (Lab for experimention)
+
+
+Being a cloud product we need to subscribe access to service now
+
+Service Now is a cloud based platform which provides ITSM. 
+
+ITIL is the underlying concept on which ITSM is built, 
+kind of like how OOPS is the underlying cancept for programming languages.
+
+#Competitiors to ServiceNow 
+    1. BMC's Tool - Remedy (good for on premise hosting) (Self Hosted)
+    2. Jira by Atlassian
+    3. FreshWorks
+
+
+NOTE: 
+    1. Magic Quarant Gartner ITSM tools
+    2. ServiceNow CEO is the ex CEO of SAP (Bill McDermott)
+    3. 
+
+LINK: developer.service-now.com || developer.servicenow.com
+
+Instance is the lab area, where you have your workspace to experiment and work
+
+Notes:
+1. ServiceNow is a cloud based platform
+2. login to enviroment through : developer.servicenow.com
+3. then create service now iD
+4. With serviceNow ID we will get access to developer platform aka PDI, personal developer Instance 
+    - It also gives access to the Documentation 
+    - Community
+    - Now Learning (will be used to get materials for certification and certification registration)
+5. Every year servicenow has 2 releases. 
+    - first release is in the month of August 
+    - the next is in the month of Feburary()
+    - the first relase now was Aspen and released in 2011
+    - Relases are named after city names, the latest version at the time of recording is TOKYO
+    - The naming convention is in alphabetical order
+    - the support of version last for current -2
+    - future releases will be (Service now release cycle)
+        -Utah
+        -Vancouver
+        -Washington 
+    - Test required for customization done on the platform with new releases
+    -
+
+
+
+6. the company started in 2006, and was called Glide Software started by Fred Luddy
+7. UI 16
+8. There are three major parts on the homw screenn
+    - Header part
+    - Filter Navigator: this is primiraliy used to navigate between the applciations and the modules
+
+    - Content Frame: Dynamic data based on application modules selected
+    
+
+9. Modules are framed under applications
+10. IMPORTANT to set the appropriate timezone of the User Profile & it has to be set properly.
+    - [DEFAULT] Date and Time format is YYYY-MM-DD
+11. Themes can be used to simplify workflow as a developer, when working on multiple instances
+12. 
+
+
+## Chapter: Service Now UI
+There are two types of UI
+1. UI15
+2. UI16
+
+Any point of time, you can switch between UI15 and UI16
+UI naming convention is based on the year in which it is released
+
+UI15 was released in 2015
+UI16 was released in 2016
+
+##ASSIGNMENT
+1. Set the theme to Bimley and Share the sreenshot in the LMS
+2. Switch to UI15 and add a quick link to edge area, this quick link should take you to any specific applitcation
+3. 
+
+
+A new Client has come up, which needs customization for its
+
+Question: What are the areas that need to be Customized for a new user?
+
+1. Greet the user with their Company Name or the user with a User name to provide 
+    better User Experience
+2. Provide a color theme which is appropriate and is in line with the work which they do
+3. Provide access to the most accessed/important applications/Modules, so as to keep a 
+    simple UI for the user to facilitate a clean cut UX
+4. BookMarking Certain modules which are critical to the Business needs of the User
+5. Provide Time and Date in the preffered system based on the location and preference 
+    of the organization.
+
+Solution:
+
+1. Branding 
+    -  
+2. Time and Date
+    - Generally go for based on Head Quarters (GDPR)
+    - Platform time
+3. Date format, 
+4. Configutring the organization (like who is who's boss)
+5. 
+
+## Modules 
+1. Basic Configuration - Can be used to setup the basics of a new company like: 
+    - Color
+    - Date and Time (generally go for the Date and Time of the HQ)
+    - logo 
+    - Timezones
+
+2. Theme - This module can be used to create custom themes for the organization.
+3. Users in User Administration: Can be used to create a new user as well as providing them 
+    roles and 
+
+4. #### Impersonate User: impersonation means that you are logging into that users 
+profile (Impersonate)
+
+
+
+
+
+## Chapter: User Administration
+
+Types of User 
+1. End User
+2. Resolver
+    - Helper Desk Technician
+    - Fullfiler
+3. System Admin
+
+
+HW:Crearte a new user. What are the application access does the new user have?
+
+############ Day 2######################
