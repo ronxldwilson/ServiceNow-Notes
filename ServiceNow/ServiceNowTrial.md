@@ -1,0 +1,475 @@
+####### DAY 1 #########
+MORPHIUS -??
+FLEXERA -??
+
+#ACRONYMS
+ITIL:Information Technology Infrastructure Library
+ITSM: Information Technology Service Managment
+ITSM ATF - Automation Testing Framework
+PDI- Personal Developer Instance (Lab for experimention)
+
+
+Being a cloud product we need to subscribe access to service now
+
+Service Now is a cloud based platform which provides ITSM. 
+
+ITIL is the underlying concept on which ITSM is built, 
+kind of like how OOPS is the underlying cancept for programming languages.
+
+#Competitiors to ServiceNow 
+    1. BMC's Tool - Remedy (good for on premise hosting) (Self Hosted)
+    2. Jira by Atlassian
+    3. FreshWorks
+
+
+NOTE: 
+    1. Magic Quarant  Gartner ITSM tools
+    2. ServiceNow CEO is the ex CEO of SAP (Bill McDermott)
+    3. 
+
+LINK: developer.service-now.com || developer.servicenow.com
+
+Instance is the lab area, where you have your workspace to experiment and work
+
+Notes:
+1. ServiceNow is a cloud based platform
+2. login to enviroment through : developer.servicenow.com
+3. then create service now iD
+4. With serviceNow ID we will get access to developer platform aka PDI, personal developer Instance 
+    - It also gives access to the Documentation 
+    - Community
+    - Now Learning (will be used to get materials for certification and certification registration)
+5. Every year servicenow has 2 releases. 
+    - first release is in the month of August 
+    - the next is in the month of Feburary()
+    - the first relase now was Aspen and released in 2011
+    - Relases are named after city names, the latest version at the time of recording is TOKYO
+    - The naming convention is in alphabetical order
+    - the support of version last for current -2
+    - future releases will be (Service now release cycle)
+        -Utah
+        -Vancouver
+        -Washington 
+    - Test required for customization done on the platform with new releases
+    -
+
+
+
+6. the company started in 2006, and was called Glide Software started by Fred Luddy
+7. UI 16
+8. There are three major parts on the homw screenn
+    - Header part
+    - Filter Navigator: this is primiraliy used to navigate between the applciations and the modules
+
+    - Content Frame: Dynamic data based on application modules selected
+    
+
+9. Modules are framed under applications
+10. IMPORTANT to set the appropriate timezone of the User Profile & it has to be set properly.
+    - [DEFAULT] Date and Time format is YYYY-MM-DD
+11. Themes can be used to simplify workflow as a developer, when working on multiple instances
+12. 
+
+
+## Chapter: Service Now UI
+There are two types of UI
+1. UI15
+2. UI16
+
+Any point of time, you can switch between UI15 and UI16
+UI naming convention is based on the year in which it is released
+
+UI15 was released in 2015
+UI16 was released in 2016
+
+##ASSIGNMENT
+1. Set the theme to Bimley and Share the sreenshot in the LMS
+2. Switch to UI15 and add a quick link to edge area, this quick link should take you to any specific applitcation
+3. 
+
+
+A new Client has come up, which needs customization for its
+
+Question: What are the areas that need to be Customized for a new user?
+
+1. Greet the user with their Company Name or the user with a User name to provide 
+    better User Experience
+2. Provide a color theme which is appropriate and is in line with the work which they do
+3. Provide access to the most accessed/important applications/Modules, so as to keep a 
+    simple UI for the user to facilitate a clean cut UX
+4. BookMarking Certain modules which are critical to the Business needs of the User
+5. Provide Time and Date in the preffered system based on the location and preference 
+    of the organization.
+
+Solution:
+
+1. Branding 
+    -  
+2. Time and Date
+    - Generally go for based on Head Quarters (GDPR)
+    - Platform time
+3. Date format, 
+4. Configutring the organization (like who is who's boss)
+5. 
+
+## Modules 
+1. Basic Configuration - Can be used to setup the basics of a new company like: 
+    - Color
+    - Date and Time (generally go for the Date and Time of the HQ)
+    - logo 
+    - Timezones
+
+2. Theme - This module can be used to create custom themes for the organization.
+3. Users in User Administration: Can be used to create a new user as well as providing them 
+    roles and 
+
+4. #### Impersonate User: impersonation means that you are logging into that users 
+profile (Impersonate)
+
+
+## Chapter: User Administration
+
+Types of User 
+1. End User
+2. Resolver (fullfiller)
+    - Helper Desk Technician
+    - Fullfiler
+3. System Admin
+
+
+HW:Crearte a new user. What are the application access does the new user have?
+SOLUTION: 
+
+############ Day 2######################
+
+VM: Virtual Machine 
+
+In the backend there is a Virtual Machine which runs in the backend in of ServiceNow.
+This VM deactivates after 10 hrs of no Use
+
+Agenda: 
+    - Learn about User Role assigning 
+    - 
+
+
+The end user will have access to self-service application
+
+
+## Giving access to End Users to make them Fullfiler
+It is found within User Administration->Users
+The Tab is called Related List
+Using this you can add roles to the organization
+    - the most frequent role used is ITIL(fullfiller role)
+
+
+# USER ADMINISRATION
+1. when a role is given more applications are given to the end user or Fullfiller
+
+Diffrent roles are prensent in the system. 
+when a new role is assigned to a user, access related to that application is provided. 
+
+2. Roles-> Partner Roles
+When adding a specific role, many more roles are added to the end user. they follow the concept of 
+inheritance and all the parent access is 
+
+
+#############
+ASSIGNMENT
+1. there is a team working on ASSETS Managment and REPORTING Managment, find out what are the roles which 
+are available in the system. 
+
+SOLUTION: 
+ASSETS ROLE (asset)
+    -inventory_user
+    -cmdb_query_builder
+    -financial_mgmt_user
+    -cmdb_read
+    -contract_manager
+    -category_manager
+REPORTING Role (report_admin) XXXXXXXXX
+    -report_scheduler	
+	-report_global	
+	-report_group	
+	-gauge_maker	
+	-report_publisher	
+	-report_alias_admin
+
+Need to use Report user in this scenario
+
+2. Create a Role: "Asset Management" whcih will grant them access of 
+    -Assets
+    -Incident
+    -Change
+    -problem
+    -Configuration Items 
+
+
+############
+USER ADMINISRATION hads 4 parts
+1. Create a User 
+2. Tyoes of user
+    -End User
+    -Fullfiler
+    -System Admin
+3. Roles
+    -out of the box roles
+    -adding/removing the roles
+    -Creating a custom role
+    -Parent role & Partner Role
+    -there is another role of impersonator
+
+4. Groups(Teams)
+#Things to take care in Group Creation
+- Create the Group
+- Add Members to the Group
+- Add role to the group
+- Expectations from group Creation
+    - Roles will be inherited to the user profiles
+    - once removed roles will be disassociated
+ServiceNow offers the option of creating Child groups which transfers the roles to the child Group from the parent
+
+5. Delegate
+Delegate is transfer of role to a temp person. 
+This can be accessed from the User Administration-> Users and then go for delegate by assigning a delegate to the user
+
+Delegate can do only four kind of works 
+    - Approvals
+    - Assignments
+    - All Notifications
+    - Meeting Invitations
+
+### 
+
+## Chapter: LIST ADMINISTRATION
+
+What is a List?
+The list of the records present in the table or another appliation. 
+This is listed in the form of Rows and Columns.
+
+Each row is a record of the table.
+Each column is a field in the table/form.
+
+## WildCard - When trying to search for some keyword. You are aware of partial word, 
+then you can use wildcard. In ServiceNow the wildcard is "*"
+ex: *Aus
+
+#ASSIGNMENT
+Show all the users who belong to company ACME Australia OR ACME North America
+
+Create a filter for the SND group
+filter on execution should show all the users who belong to company ACME NA and Department
+IT Sales. Exclude Inactive users
+
+# Show matching and Filter Out
+If you right click then you can either Show Matching records or Filter Out 
+records easily by just one click.
+
+#ASSIGNMENT
+pull a report of all the user which are not VIP and belong to company ACME China or ACME Italy
+and download the report in PDF format
+
+#ASSIGNMENT
+list all the users present by company by 
+
+
+UI Property can be used to change the Number of rows which are made to view the lists
+
+
+
+#########Types of Cloud Offering 
+1. SaaS - Software as a Service
+High amount of limitation in this form of service. Low customization. 
+
+2. PaaS - Platform as a Service
+Much more capability of customization
+    Ex: SFDS(SalesForce), SN
+
+3. IaaS - Infrastructure as a Service
+    Ex: AWS, Azure, GCP
+
+ServiceNow is a kind of Application Platform as a Service
+In ServiceNow the underlying architecture remains same when working on diffrent platforms
+Single System of Engagement for the Enterprise 
+
+
+Three layers of Service Now
+1. NonStop Cloud:
+    -Multi instance ### IMPORTANT ####
+    Minimum 3 instances exist
+    a) Production Instance: ex: deloitte.servicenow.com
+
+    
+    b) UAT(User Acceptance Testing) instance: 
+    Done at company level, once the features have been unit tested
+
+    deloitte.UAT (Done by the Testing Team)
+    once passed by the testing team, it passes to production or it goes LIVE
+
+    Device Testing:  
+    Functionallity Testing:
+    BlackBox Testing:
+    Manual Testing:
+
+    c) DEV instance: ex: deloitte
+
+2. Now Platform 
+This is a single data model. 
+    -Service Portal 
+    -Subscription and Notification
+    -Knowledege based
+    -service Catalog
+    -workflow
+
+3. Cloud Services
+
+
+# Summary : One Platform, One Data Model but Many Products
+Service Now Platform has the capaboilty to connect with any third party platforms
+
+
+
+
+## Chapter: ARCHITECTURE
+
+1. Hardware
+2. VM
+3. OS 
+4. MiddleWare
+5. Application
+
+In a company there can be three diffrent stacks. All the three Stacks or Instances 
+are isolated but do have the capability to communicate among themeselves
+
+_________________________________________________________
+| DEV INSTANCE   | UAT INSTANCE  |   PRODUCTION INSTANCE |
+|________________________________________________________|
+| development    | testing       |   No development in   |
+| happens here   | happens here  |   production          |
+|________________________________________________________|
+
+
+
+Around the world there are 10 support centres
+and 11 Datacenter Pairs i.e. 22  DataCentres in total around the world
+
+This is called as High Availability Pair
+    A typically Service Now hosted instance is split over two physical datacenters, forming 
+    a High Availability Pair
+2 DCs stay in sync always 
+There is Never Downtime cause of this strategy
+
+
+*************
+HI PORTAL : hi.servicenow.com || support.servicenow.com
+*************
+
+## Chapter: Development 
+
+#### ITIL Conepts
+
+## Incidents: *Break fix* Scenario
+    - Something was working suddenly encountering as issue (Not working Anymore)
+    - Should be resolved Quickly as the Impact might be high 
+    - How Quickly?? (defined in SLA: Service Level Agreemen) 
+    - The above depends on priority (priority can be decided based on Impact, Risk and Costs)
+    - 
+
+Examples Scenarios of incidnet creation
+-Unable to login
+-100 unwanted emails recieved
+-Outlook doesn't load emails since last 1 hr
+
+
+
+## Self Study Notes ###
+Service Now Call themselves as Enterprise Cloud Company
+
+## Under USER ADMINISTRATION
+Diffrent ways to create user account.
+1. Manual User Creation
+2. Data Load: Upload in Bulk
+3. Integrations to the external sources
+    LDAP(lightweight Directory Access Protocol)
+        - Active Directory (ID made in the Local Company)
+        Central Reposiory made in the compaines storage 
+
+    SSO (Single Sign On)
+        - SML certificate is issued
+        - external third party providers
+
+
+############ DAY 3 ###############
+User data is only accessible by the admin
+
+OOTB - Out Of The Box 
+OOTB means feature which are part of the product.
+
+#Security Admin Role: This is a Temporary Role
+    - This role is under elevated role under login user dropdown
+    - Only available for admins 
+    - Used to work woth Access Controls
+
+
+What are the diffrent types of Tickets
+There are 4 Types of Tickets
+    1. Incident
+        Incident application is available under multiple applications
+            Self Service Incident: End users selecet self service. 
+
+            Service Desk(aka Fullfiler): This allows the Service desk people to create tickets for others
+                In this there are two mandatry fields:
+                    1. Caller(Who is raising the ticket)
+                    2. Short Description
+
+             ________________________________
+            |   Priority = Impact + Urgency  |
+            |________________________________|    
+
+            Priorty is of five types:
+                P1 - Critical
+                P2 - High
+                P3 - Moderate
+                P4 - Low
+                P5 - Planning
+            
+            # Priority Matrix
+            ____________________________________________
+            |   Impact	|   Urgency     |	Priority    |
+            |___________|_______________|_______________|
+            |1 - High   |   1 - High    |	1 - Critical|
+            |1 - High	|   2 - Medium  |	2 - High    |
+            |1 - High	|   3 - Low	    |   3 - Moderate|
+            |___________|_______________|_______________|
+            |2 - Medium	|   1 - High	|   2 - High    |
+            |2 - Medium	|   2 - Medium	|   3 - Moderate|
+            |2 - Medium	|   3 - Low	    |   4 - Low     |
+            |___________|_______________|_______________|
+            |3 - Low	|   1 - High	|   3 - Moderate|
+            |3 - Low	|   2 - Medium	|   4 - Low     |
+            |3 - Low	|   3 - Low	    |   5 - Planning|
+            |___________|_______________|_______________|
+
+            Once the Ticket has been added in the Incident section, that means the case/incident has been 
+            acknowledged (Response SLA) and the state is InProgress
+            
+            In Incident reporting: Work Notes are Internal documents and additional comments 
+            are customer visible
+            It is possible add people to watchlsit, they will be able to watch all updates
+            Work Note List: only work note will be recieved.
+
+            Five Types of Statuses of an Incident
+                - New 
+                - InProgress
+                - OnHold 
+                - resolved
+                - cancel
+
+            An incident status can be changed from resolve to reopened.
+            
+
+    2. Change
+    3. Request 
+    4. Problem
+    * Task 
+
+#
