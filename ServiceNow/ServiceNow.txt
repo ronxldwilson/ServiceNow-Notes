@@ -465,11 +465,18 @@ There are 4 Types of Tickets
                 - cancel
 
             An incident status can be changed from resolve to reopened.
-            
+
 
     2. Change
     3. Request 
     4. Problem
     * Task 
 
-#
+# Adding someone to the Ticket group resolution 
+makes them part of a seperte group in which they can talk among themselves
+
+#Connect Chat Feature: You can start conversation with new people service Now Platform
+
+# It is also possible to read up on the incident history and check logs of when something was 
+updated and when, so as to resolve any conflicts between the groups
+
