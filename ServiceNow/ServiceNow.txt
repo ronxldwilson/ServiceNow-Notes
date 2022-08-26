@@ -127,9 +127,6 @@ Solution:
 profile (Impersonate)
 
 
-
-
-
 ## Chapter: User Administration
 
 Types of User 
@@ -219,6 +216,8 @@ USER ADMINISRATION hads 4 parts
     -adding/removing the roles
     -Creating a custom role
     -Parent role & Partner Role
+    -there is another role of impersonator
+
 4. Groups(Teams)
 #Things to take care in Group Creation
 - Create the Group
@@ -232,6 +231,13 @@ ServiceNow offers the option of creating Child groups which transfers the roles 
 5. Delegate
 Delegate is transfer of role to a temp person. 
 This can be accessed from the User Administration-> Users and then go for delegate by assigning a delegate to the user
+
+Delegate can do only four kind of works 
+    - Approvals
+    - Assignments
+    - All Notifications
+    - Meeting Invitations
+
 ### 
 
 ## Chapter: LIST ADMINISTRATION
@@ -291,6 +297,7 @@ Three layers of Service Now
     -Multi instance ### IMPORTANT ####
     Minimum 3 instances exist
     a) Production Instance: ex: deloitte.servicenow.com
+
     
     b) UAT(User Acceptance Testing) instance: 
     Done at company level, once the features have been unit tested
@@ -301,7 +308,7 @@ Three layers of Service Now
     Device Testing:  
     Functionallity Testing:
     BlackBox Testing:
-    Manual Testing
+    Manual Testing:
 
     c) DEV instance: ex: deloitte
 
@@ -361,12 +368,11 @@ HI PORTAL : hi.servicenow.com || support.servicenow.com
 #### ITIL Conepts
 
 ## Incidents: *Break fix* Scenario
-    - Something was working 
-    - Suddenly encountering as issue (Not working Anymore)
+    - Something was working suddenly encountering as issue (Not working Anymore)
     - Should be resolved Quickly as the Impact might be high 
-    - How Quickly?? (defined in SLA: Service Level Agreemen)
-    - The above depends on priority
-    -
+    - How Quickly?? (defined in SLA: Service Level Agreemen) 
+    - The above depends on priority (priority can be decided based on Impact, Risk and Costs)
+    - 
 
 Examples Scenarios of incidnet creation
 -Unable to login
@@ -383,7 +389,7 @@ Diffrent ways to create user account.
 1. Manual User Creation
 2. Data Load: Upload in Bulk
 3. Integrations to the external sources
-    LDAP(lightweight Directory Access Protocol) 
+    LDAP(lightweight Directory Access Protocol)
         - Active Directory (ID made in the Local Company)
         Central Reposiory made in the compaines storage 
 
@@ -393,4 +399,77 @@ Diffrent ways to create user account.
 
 
 ############ DAY 3 ###############
+User data is only accessible by the admin
 
+OOTB - Out Of The Box 
+OOTB means feature which are part of the product.
+
+#Security Admin Role: This is a Temporary Role
+    - This role is under elevated role under login user dropdown
+    - Only available for admins 
+    - Used to work woth Access Controls
+
+
+What are the diffrent types of Tickets
+There are 4 Types of Tickets
+    1. Incident
+        Incident application is available under multiple applications
+            Self Service Incident: End users selecet self service. 
+
+            Service Desk(aka Fullfiler): This allows the Service desk people to create tickets for others
+                In this there are two mandatry fields:
+                    1. Caller(Who is raising the ticket)
+                    2. Short Description
+
+             ________________________________
+            |   Priority = Impact + Urgency  |
+            |________________________________|    
+
+            Priorty is of five types:
+                P1 - Critical
+                P2 - High
+                P3 - Moderate
+                P4 - Low
+                P5 - Planning
+            
+            # Priority Matrix
+            ____________________________________________
+            |   Impact	|   Urgency     |	Priority    |
+            |___________|_______________|_______________|
+            |1 - High   |   1 - High    |	1 - Critical|
+            |1 - High	|   2 - Medium  |	2 - High    |
+            |1 - High	|   3 - Low	    |   3 - Moderate|
+            |___________|_______________|_______________|
+            |2 - Medium	|   1 - High	|   2 - High    |
+            |2 - Medium	|   2 - Medium	|   3 - Moderate|
+            |2 - Medium	|   3 - Low	    |   4 - Low     |
+            |___________|_______________|_______________|
+            |3 - Low	|   1 - High	|   3 - Moderate|
+            |3 - Low	|   2 - Medium	|   4 - Low     |
+            |3 - Low	|   3 - Low	    |   5 - Planning|
+            |___________|_______________|_______________|
+
+            Once the Ticket has been added in the Incident section, that means the case/incident has been 
+            acknowledged (Response SLA) and the state is InProgress
+            
+            In Incident reporting: Work Notes are Internal documents and additional comments 
+            are customer visible
+            It is possible add people to watchlsit, they will be able to watch all updates
+            Work Note List: only work note will be recieved.
+
+            Five Types of Statuses of an Incident
+                - New 
+                - InProgress
+                - OnHold 
+                - resolved
+                - cancel
+
+            An incident status can be changed from resolve to reopened.
+            
+
+    2. Change
+    3. Request 
+    4. Problem
+    * Task 
+
+#
