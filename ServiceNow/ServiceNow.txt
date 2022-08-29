@@ -618,4 +618,26 @@ The Problem needs to go one by one through all the stages of life cycle to be re
 
 if the problems come back after sometime, it can be sent to reanalyse, so that the problem is resolved again
 
+###### Knowledge Management ####
 
+-> Knowledge Articles - Helps resolver teams to resolve the incident faster
+-> Knowledge Articles (KA) - are grouped under the KB(Knowledge Base)
+-> KA Publish/Retire needs Approval 
+
+# Createe a Knowledge base called: Deloitte ServiceNow Training
+# Owner of this Knowledge Base is Fred Luddy
+# Then create a Knowledge Article and the article name is Deloitte ITSM Training
+# 
+
+Once knowledge articles are added to the specific knowledge base. 
+It shows up in while filling for incident report by the service desk
+This helps in quick resolution of the Incident and saves costs.
+
+if the Service Desk agent is satisfied, thay can tag the article to the incident
+which gets added as an additional comment, this commment is sent to the user who can 
+then DIY the solution to his requirements
+
+### Assignemnt
+
+Create a knowledge article for the Java installation issue, place it under IT --> Java category_manager
+Create-> Publish -> Test and confirm
