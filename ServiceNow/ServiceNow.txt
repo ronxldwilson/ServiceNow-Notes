@@ -1,6 +1,4 @@
 ####### DAY 1 #########
-MORPHIUS -??
-FLEXERA -??
 
 #ACRONYMS
 ITIL: Information Technology Infrastructure Library
@@ -8,6 +6,8 @@ ITSM: Information Technology Service Management
 ITSM ATF - Automation Testing Framework
 PDI- Personal Developer Instance (Lab for experimentation)
 
+MORPHIUS - Cloud automation Tool. Which can be used to monitor the consumption in the Cloud based Servic  
+FLEXERA - Software Asset Management Tool
 
 Being a cloud product, we need to subscribe access to service now
 
@@ -25,14 +25,13 @@ kind of like how OOPS is the underlying concept for programming languages.
 NOTE: 
     1. Magic Quadrant Gartner ITSM tools
     2. ServiceNow CEO is the ex-CEO of SAP (Bill McDermott)
-    3. 
 
 LINK: developer.service-now.com || developer.servicenow.com
 
 Instance is the lab area, where you have your workspace to experiment and work
 
 Notes:
-1. ServiceNow is a cloud-based platform
+1. ServiceNow is a cloud-based platform.
 2. login to environment through: developer.servicenow.com
 3. then create service now ID
 4. With ServiceNow ID we will get access to developer platform aka PDI, personal developer Instance 
@@ -51,8 +50,6 @@ Notes:
         -Vancouver
         -Washington 
     - Test required for customization done on the platform with new releases
-    -
-
 
 
 6. the company started in 2006, and was called Glide Software started by Fred Luddy
@@ -60,15 +57,12 @@ Notes:
 8. There are three major parts on the home screen
     - Header part
     - Filter Navigator: this is primarily used to navigate between the applications and the modules
-
     - Content Frame: Dynamic data based on application modules selected
     
-
 9. Modules are framed under applications
 10. IMPORTANT to set the appropriate time zone of the User Profile & it must be set properly.
     - [DEFAULT] Date and Time format is YYYY-MM-DD
 11. Themes can be used to simplify workflow as a developer, when working on multiple instances
-12. 
 
 
 ## Chapter: Service Now UI
@@ -86,7 +80,6 @@ UI16 was released in 2016
 1. Set the theme to Bimley and Share the screenshot in the LMS
 2. Switch to UI15 and add a quick link to edge area, this quick link 
     should take you to any specific application
-
 
 A new Client has come up, which needs customization for its
 
@@ -276,9 +269,8 @@ list all the users present by company by
 
 UI Property can be used to change the Number of rows which are made to view the lists
 
+######### Types of Cloud Offering #####
 
-
-#########Types of Cloud Offering 
 1. SaaS - Software as a Service
 High amount of limitation in this form of service. Low customization. 
 
@@ -294,12 +286,12 @@ In ServiceNow the underlying architecture remains same when working on different
 Single System of Engagement for the Enterprise 
 
 
-Three layers of Service Now
+Three layers of Service Now || MULTIPLE INSTANCES run in ServiceNow
 1. Nonstop Cloud:
     -Multi instance ### IMPORTANT ####
     Minimum 3 instances exist
-    a) Production Instance: ex: deloitte.servicenow.com
 
+    a) Production Instance: ex: deloitte.servicenow.com
     
     b) UAT (User Acceptance Testing) instance: 
     Done at company level, once the features have been unit tested
@@ -329,8 +321,6 @@ This is a single data model.
 Service Now Platform has the capability to connect with any third-party platforms
 
 
-
-
 ## Chapter: ARCHITECTURE
 
 1. Hardware
@@ -342,12 +332,12 @@ Service Now Platform has the capability to connect with any third-party platform
 In a company there can be three different stacks. All the three Stacks or Instances 
 are isolated but do have the capability to communicate among themselves
 
-_________________________________________________________
+____________________________________________________________
 | DEV INSTANCE   | UAT INSTANCE     |   PRODUCTION INSTANCE |
-|________________________________________________________|
+|___________________________________________________________|
 | development    | testing          |   No development in   |
 | happens here   | happens here     |   production          |
-|________________________________________________________|
+|___________________________________________________________|
 
 
 
@@ -374,16 +364,13 @@ HI PORTAL: hi.servicenow.com || support.servicenow.com
     - Should be resolved Quickly as the Impact might be high 
     - How Quickly?? (Defined in SLA: Service Level Agreement) 
     - The above depends on priority (priority can be decided based on Impact, Risk and Costs)
-    - 
 
 Examples Scenarios of incident creation
 -Unable to login
 -100 unwanted emails received
 -Outlook doesn't load emails since last 1 hr.
 
-
-
-## Self Study Notes ###
+## SELF STUDY NOTES ##
 Service Now Call themselves as Enterprise Cloud Company
 
 ## Under USER ADMINISTRATION
@@ -410,7 +397,6 @@ OOTB means feature which are part of the product.
     - This role is under elevated role under login user dropdown
     - Only available for admins 
     - Used to work with Access Controls
-
 
 What are the different types of Tickets?
 There are 4 Types of Tickets
@@ -469,7 +455,6 @@ There are 4 Types of Tickets
             WORK NOTE LIST: only update on the worknote will be recieved, notification will be sent to people
             who are added to worknote list whenever there is an update or new additional comments added.
 
-
             Five Types of Statuses of an Incident(Life Cycles)
                 - New
                 - InProgress
@@ -479,7 +464,6 @@ There are 4 Types of Tickets
                 - Cancel
 
             An incident status can be changed from resolve to reopened.
-
 
     2. Change
     3. Request 
@@ -525,10 +509,6 @@ Agenda:
                 Service Agreement will be between A and B
                 Another Agreement between B and c
                 But C is bound by the agreement between A and B
-
-        4. 
-        5. 
-
 
     -Understanding SLA?
     
@@ -579,7 +559,6 @@ The Purpose of SLA is to create Accountability within the organization
 ########## HW ###########
 
 Create a Schedule for 9-6 weekdays excluding holidays(India Calendar) (Aug- Dec)
-
 
 ## ITSM Suites
 1. Incident Management
@@ -680,6 +659,9 @@ Create-> Publish -> Test and confirm
 
 
 CAB : Change Advisory Board
+In CAB meetings the approval of one member is enought to grant the work to be done on the next stage.
+The vote of the CAB needs to be unanimus, as having this kind of roll back leads to questions on the board
+and is a bad remark on the working of the board.
 
 Create a Standard Change Template
 
