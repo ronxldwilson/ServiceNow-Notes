@@ -84,8 +84,8 @@ UI16 was released in 2016
 
 ##ASSIGNMENT
 1. Set the theme to Bimley and Share the screenshot in the LMS
-2. Switch to UI15 and add a quick link to edge area, this quick link should take you to any specific application
-3. 
+2. Switch to UI15 and add a quick link to edge area, this quick link 
+    should take you to any specific application
 
 
 A new Client has come up, which needs customization for its
@@ -226,11 +226,13 @@ USER ADMINISRATION has 4 parts
 - Expectations from group Creation
     - Roles will be inherited to the user profiles
     - once removed roles will be disassociated
-ServiceNow offers the option of creating Child groups which transfers the roles to the child Group from the parent
+ServiceNow offers the option of creating Child groups which transfers the roles to the child 
+Group from the parent
 
 5. Delegate
 Delegate is transfer of role to a temp person. 
-This can be accessed from the User Administration-> Users and then go for delegate by assigning a delegate to the user
+This can be accessed from the User Administration-> Users and then go for delegate by 
+assigning a delegate to the user
 
 Delegate can do only four kinds of works 
     - Approvals
@@ -367,7 +369,7 @@ HI PORTAL: hi.servicenow.com || support.servicenow.com
 
 #### ITIL Concepts
 
-## Incidents: *Break fix* Scenario
+## Incidents: *BREAK FIX* Scenario
     - Something was working suddenly encountering as issue (Not working Anymore)
     - Should be resolved Quickly as the Impact might be high 
     - How Quickly?? (Defined in SLA: Service Level Agreement) 
@@ -421,9 +423,9 @@ There are 4 Types of Tickets
                     1. Caller (Who is raising the ticket)
                     2. Short Description
 
-             ________________________________
+             _______________________________
             |   Priority = Impact + Urgency |
-            |________________________________|    
+            |_______________________________|    
 
             Priority is of five types:
                 P1 - Critical
@@ -437,7 +439,7 @@ There are 4 Types of Tickets
             |   Impact	|   Urgency     |	Priority    |
             |___________|_______________|_______________|
             |1 - High   |   1 - High    |	1 - Critical|
-            |1 - High	|   2 - Medium |	2 - High    |
+            |1 - High	|   2 - Medium  |	2 - High    |
             |1 - High	|   3 - Low	    |   3 - Moderate|
             |___________|_______________|_______________|
             |2 - Medium	|   1 - High	|   2 - High    |
@@ -449,13 +451,25 @@ There are 4 Types of Tickets
             |3 - Low	|   3 - Low	    |   5 - Planning|
             |___________|_______________|_______________|
 
+            Response Time is Dependent on the SLA 
+        
             Once the Ticket has been added in the Incident section, that means the case/incident has been 
             acknowledged (Response SLA) and the state is InProgress
             
             In Incident reporting: Work Notes are Internal documents and additional comments 
-            are customer visible
+            are customer visible.
+
+            WATCH LIST: Update will be sent for every update, filed value modeification and Notification will be 
+            sent to the team.
+
+            Additional Comment: 
+
             It is possible add people to watchlist, they will be able to watch all updates
-            Work Note List: only work note will be received.
+            
+            WORK NOTE LIST: only update on the worknote will be recieved, notification will be sent to people
+            who are added to worknote list whenever there is an update or new additional comments added.
+
+
 
             Five Types of Statuses of an Incident
                 - New 
@@ -481,3 +495,47 @@ makes them part of a separate group in which they can talk among themselves
 updated and when, to resolve any conflicts between the groups
 
 #################### Day 4 ############################
+
+## SLA: Service Level Agreement
+
+Agenda: 
+    -What is SLA?
+        -SLA is an agreement between 2 parties, i.e., 
+            -Customer and 
+            -Service providers
+        -SLA can be confuigured for each:
+            -team, 
+            -Department
+            -Company 
+    
+    -How Many Types of SLA?
+
+        1. Normal SLA - Which can be customized for a consumer's Use.
+
+        2. OLA (Operational Level Agreement) - Agreement between two parties WITHIN the same organization
+            -   Ex: agreement between Sales Team and Delivery Team
+                L&D Team and the Project Team
+        
+         
+        3. Underpinning Contract(UC): In these there are three parties which are liable to contract from the \
+                contract of previous one.
+                
+                A-->B-->C
+
+                Service Agreement will be between A and B
+                Another Agreement between B and c
+                But C is bound by the agreement between A and B
+
+        4. 
+        5. 
+
+
+    -Understanding SLA?
+    
+    
+    -Examples of SLA?
+    
+    -What are the usecases of SLA?
+
+
+
