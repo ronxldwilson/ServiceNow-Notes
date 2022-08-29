@@ -641,3 +641,45 @@ then DIY the solution to his requirements
 
 Create a knowledge article for the Java installation issue, place it under IT --> Java category_manager
 Create-> Publish -> Test and confirm
+
+## CHANGE MANAGEMENT ##
+
+- Whenever there is an Infrastructure change 
+- There needs to be Impact Analysis before the chamge is implemented
+- Sometimes there may be cost associated with the change
+- It might also require approval
+
+# Types of Change Management
+    1. Normal Change: Approval required for Change
+    2. Standard Change: Already Approved for Change. No Approval required
+        there is no business imapct when standard change is implemented.
+
+    3. Emergency Change: Approval required
+
+#Life cycle of Change Request
+    1. New: 
+    2. Assess
+    3. Authorise
+    4. Schedule 
+    5. implement
+    6. Review
+    7. Closed/Cancelled
+
+
+     _________________________________________________________
+    |   Stages  |   Normal  |   Emergency   |   Standard     |    
+    |________________________________________________________|
+    |   New     |   Yes     |   Yes         |   Yes          |
+    |  Assess   |   Yes     |   No          |   No           |
+    |  Authorise|   Yes     |   Yes         |   No           |
+    |  Schedule |   Yes     |   Yes         |   Yes          |
+    |  Implement|   Yes     |   Yes         |   Yes          |
+    |   Review  |   Yes     |   Yes         |   Yes          |
+    |   Closed  |   Yes     |   Yes         |   Yes          |
+    |___________|___________|_______________|________________|
+
+
+CAB : Change Advisory Board
+
+Create a Standard Change Template
+
