@@ -470,13 +470,13 @@ There are 4 Types of Tickets
             who are added to worknote list whenever there is an update or new additional comments added.
 
 
-
-            Five Types of Statuses of an Incident
-                - New 
+            Five Types of Statuses of an Incident(Life Cycles)
+                - New
                 - InProgress
                 - On Hold 
-                - resolved
-                - cancel
+                - Resolved                      //
+                - Closed                        // In these two cases the SLA is paused
+                - Cancel
 
             An incident status can be changed from resolve to reopened.
 
@@ -537,5 +537,85 @@ Agenda:
     
     -What are the usecases of SLA?
 
+## Assignment
+    Define SLA for the Hardware team, any incident assigned to the team with priority 2
+    must be resolved within 2 mins
+
+###### SLA: Service Level Agreement
+
+# Schedule: Working hours of team is added in the schedule
+    -If put No schedule, it will run 24/7
+    
+#Three options available in the SLA definintion:
+    Start Condition
+    Pause Condition
+        it will be paused on two status
+            1. is on hold 
+            2. Resolved 
+    Stop Condition
+#####
+    Five Types of Statuses of an Incident(Life Cycles)
+                - New
+                - InProgress
+                - On Hold 
+                - Resolved                      //
+                - Closed                        // In these two cases the SLA is paused
+                - Cancel
+
+
+## Assignmet: Create a OLA for the IT department any incident assigned to IT department and Software group
+must be responded within 5 minutes and resolved with 10 mins.
+
+SLA Agreements can be automatically invoked as soon as an incident is created
+
+To Creaate SLA Agreement, open the SLA tab and create new SLA, 
+    Define the Start Conditions of Incidents 
+    Define the Pause Conditions of Incidents 
+    Define the Stop Conditons of Incidents 
+
+The Purpose of SLA is to create Accountability within the organization
+
+
+########## HW ###########
+
+Create a Schedule for 9-6 weekdays excluding holidays(India Calendar) (Aug- Dec)
+
+
+## ITSM Suites
+1. Incident Management
+2. Service Level Management
+3. Problem Management
+4. Knowledge Management
+5. Change Management
+6. Service Request Management
+7. CI Management
+8. Asset Management
+9. Release Management
+
+
+## Chapter: PROBLEM MANAGEMENT
+
+A problem is created when there is 
+    -a repeated issue or 
+    - the issue is appearing frequently
+    - Vendor Dependency
+
+when such kind of issues happen we need to create a problem ticket
+PREREQUISITE for problem creation is that there needs to be existing Incidents
+
+Life Cycle of Problem Tickets
+    - New
+    - Assess
+    - RCA (Root Cause Analysis)
+    - Fix in Progress
+    - Resolved
+    - Closed
+
+Once an Incident has been upgraded to a Problem then we need to attach all the related incidents(if any)
+to the same Incident(i.e., create a Child - Parent association between the incidents)
+
+The Problem needs to go one by one through all the stages of life cycle to be resolved
+
+if the problems come back after sometime, it can be sent to reanalyse, so that the problem is resolved again
 
 
