@@ -778,3 +778,45 @@ No export/import is required in this
 # Remote Instance is used to connect between two instances, using this all the complete update sets are visible
 in the other end, you can get all the upodate sets to this 
 
+
+
+## TABLES
+
+Whenever there is a new Table which is created it comes with "U_"
+
+To give access of a particular applicatio to a user, just give the role to the user of that particular Application
+
+
+# SYS_ID is the unique identifier for all the records
+
+####################################################
+SYS ID 
+Every Record in ServiceNow has an unique identifier called as SYS ID
+It is a 32 char long alpha numeric character
+
+
+
+Just Right click on top of any record, this will lead to the option for copying the SYS ID
+a6e3977647e11110c68ca368436d43d8
+
+#####################################################
+
+
+########################################################
+
+
+Steps to DEVELOPMENT
+
+STEP 1: Always create an update set before starting any developement activity.
+
+        ALWAYS CREATE A * LOCAL UPDATE SET*
+        Without creating this, the development process has no meaning 
+
+STEP 2: Then Go on To create Tables and Finish development of the application
+
+STEP 3: Once Satisfied with the work, then move the Update set status to Complete.
+
+STEP 4: 
+
+
+NOTE: It is possible to share the access of just one application to any of the user
