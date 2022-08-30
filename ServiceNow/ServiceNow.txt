@@ -746,11 +746,11 @@ While Viewing the Update Set, you can see all the changes which has been done in
 
 ## IMPORTING THE UPDATE SET FROM DIFFRENT Developer
 
-1. Click on Retirece update sets
+1. Click on Retrieve update sets
 
 
 
-
+ 
 ########## UpDate Set Notes ####
 1. Create new Update set. 
 2. Start Capturing, so from now on whatever happens will be recorded in the specific instance of the update set
@@ -763,3 +763,18 @@ While Viewing the Update Set, you can see all the changes which has been done in
 6. Once an update set has been imported, procced to preview the changes before commiting them to your system
 7. If there are no merge conflicts, then procced to accept the new commits into the appication
 8. When this is done, all the changes imported will be implemented into the instance.
+
+## Merging Two Update Sets is possible to create a new update set which is the merged form of both.
+
+
+## Update Source
+
+Refer any completed updateset present in the source instance.
+Direct pulling from Dev instance to the UAT instance is possible
+No export/import is required in this
+
+
+##TEAM DEVELOPMENT
+# Remote Instance is used to connect between two instances, using this all the complete update sets are visible
+in the other end, you can get all the upodate sets to this 
+
