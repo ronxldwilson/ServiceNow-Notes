@@ -555,7 +555,12 @@ To Creaate SLA Agreement, open the SLA tab and create new SLA,
 
 The Purpose of SLA is to create Accountability within the organization
 
+In SLA there is an option to define Schedules on which the schedule will run.   
 
+How to Create New schedile
+
+1. Create a insert and Stay 
+2. Then go to create 
 ########## HW ###########
 
 Create a Schedule for 9-6 weekdays excluding holidays(India Calendar) (Aug- Dec)
@@ -665,3 +670,96 @@ and is a bad remark on the working of the board.
 
 Create a Standard Change Template
 
+################### Day 5 #####################
+
+Development in ServiceNow
+
+-How to start Development
+-How to capture the development
+-How to move the code between the instances
+-Update Set (kind of like VCS for ServiceNow)
+
+
+## UPDATE SET ##
+- Update set is used to capture the Development Activites
+- The Applcaition used to use Update Set is local update set
+
+
+Update set will start capturing the development activities only when it is current
+
+Switching between diffrent update set is possible, in the sttiing gear option, then go to 
+developer and select which update set you are working on.
+
+This can be used when working on multiple features 
+
+TABLES
+
+Any custon table that developer creates, will have a prefix. that will be u_LABEL
+the U stands for User defined Tables
+
+6 fields will be created automatically
+1. Created by
+2. Created
+3. Sys_ID
+4. updates
+5. Updated by
+6. Updated
+
+
+#10 Observations when new Table is Created
+1. A PRIMARY KEY is assigned to the table (This cannot be Null)
+2. Access control is defined on the Table, like what all operations are possible on the Table
+3. Max Length is defined for each of the 6 fields which are created by default
+4. There is an option to define application access 
+    By default it is set to Read only by the applications that means that the application 
+    can only read the tables
+    
+    There is also an option to allow the access of the table via web services
+5. Security Roles need to be defined if any one other than the system admin wants to work 
+    on the appliaction. This is also called as ACLs
+ 
+6. Adding new fields is also possible through this instance
+7. There is an option in Labels-> for label as well as Plurals???
+8. There is something called as Table Subscription Model???
+9. Access to the various UI of the Tables are possible thru this screen like:
+    - Design Form
+    - Layout Form
+    - Layout List
+    - View the Form
+    - Can also view the Schema Form
+    - Can define REST API as well for the Table 
+    - Can Run Point Scan ????
+
+10. Adding Auto Numbering is possible 
+    - Use auto-numbering to define a sequential identifying code made up of a prefix, 
+    a base number and a padding value to ensure a consistent format
+
+
+
+## As soon as the Table is created: The Correspomding Application will be created for it
+
+Now if we go back and check the UpdateSet, all the changes done in the table have been recorded in the 
+specific updateset whihc was invoked
+
+While Viewing the Update Set, you can see all the changes which has been done in a specific list of all the updates
+
+
+## IMPORTING THE UPDATE SET FROM DIFFRENT Developer
+
+1. Click on Retirece update sets
+
+
+
+
+########## UpDate Set Notes ####
+1. Create new Update set. 
+2. Start Capturing, so from now on whatever happens will be recorded in the specific instance of the update set
+3. Once the required updates have been done, you can either move on to a diffrent update set from setting
+    or move on to defalult update set
+4. Once, you are satisfied with the update set, you can export the update set in XML format and share it with other
+    developers, 
+
+5. To import an update set from a different developer, go to Retrieved Update Set and click on Import
+6. Once an update set has been imported, procced to preview the changes before commiting them to your system
+7. If there are no merge conflicts, then procced to accept the new commits into the appication
+8. When this is done, all the changes imported will be implemented into the instance.
