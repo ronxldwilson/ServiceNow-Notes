@@ -905,3 +905,64 @@ Every Table has it's own autonumbering, when extending it will be turned off by 
 Find the Source Table for Incident, Change and Problem  
 TASK Table is the Source Table 
 
+####
+
+Task Table
+
+The Task table is one of the most important tables in the ServiceNow instance.
+Many tables extend the Task table. Thus, it is the parent class of many other
+tables, such as Incident, Change Task, Problem, and so on. Using the Tables
+modules, we can open the Task table entry to view a list of all available columns
+under the Columns tab, as shown in the following screenshot.
+
+
+################# FORM DESIGN ###############
+1. Tools available in form Design
+2. It is an interface using which we can add new Fields
+3. Also, will be able to select the appropriate field types to be used
+    Example: Date Field, String, Refernce
+4. Gives the option to create layout + Form Sections as well 
+5. 
+
+
+WHENEVER CREATING A NEW FIELD IN THE FORM DESIGN, MAKE SURE TO CHANGE THE BACKEND NAME
+
+This backend name cannot be changed, once it is created
+Prefix should be u_<field_name>
+
+################# BASE TABLES ##################
+
+What is a Base Table?
+
+What are the base tables in service now?
+Two base Tables are present
+    1. Task Table
+    2. CMDB Table
+
+And how are they extended
+
+
+########### 
+TABLE NAMES FOR THE FOLLOWING FORMS
+1. User     -   	    sys_user
+2. Role     -           sys_user_role
+3. Group    -           sys_user_group
+4. Group Membership -   sys_user_grmember
+########### 
+
+PREFIXES IN TABLE
+1. sys : System Generated
+2. CMDB: Configuration Management related
+3. ALM : Asset life Management 
+4. imp : Import set related
+5. u_ : User Defined
+6. SLA : Service Level Agreement
+
+
+
+
+
+
+
+
+
