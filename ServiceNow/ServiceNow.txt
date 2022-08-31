@@ -961,6 +961,31 @@ PREFIXES IN TABLE
 
 
 
+Step 1: Create a new UPDATE SET: "People"
+Step 2: Create a new table and extend it from "sys_user", this shall give all the necessary fields
+
+
+
+
+Edit the Name of the Header as Basic Perosn Info.
+
+Step 3: Create Various Sections within this 
+    - First is the Default One,
+    - Sec 2 is Security Information
+    - Sec 3 is Assignment Information
+
+Step 4: Add the specific Fields with each of the Validation done correctly on it
+Step 5: 
+
+
+Miscellaneous:
+1. How to get the Save Button in the form????
+
+
+
+
+
+
 
 
 
