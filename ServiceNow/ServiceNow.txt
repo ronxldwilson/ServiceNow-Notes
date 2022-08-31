@@ -382,9 +382,11 @@ Different ways to create user account.
         - Active Directory (ID made in the Local Company)
         Central Repository made in the company’s storage 
 
-    SSO (Single Sign On)
+4. SSO (Single Sign On)
         - SML certificate is issued
         - external third-party providers
+5. Use of workday is also possible for Integration of user record creation
+ 
 
 
 ############ DAY 3 ###############
@@ -809,7 +811,7 @@ Steps to DEVELOPMENT
 
 STEP 1: Always create an update set before starting any developement activity.
 
-        ALWAYS CREATE A * LOCAL UPDATE SET*
+        ALWAYS CREATE A *LOCAL UPDATE SET*
         Without creating this, the development process has no meaning 
 
 STEP 2: Then Go on To create Tables and Finish development of the application
@@ -820,3 +822,86 @@ STEP 4:
 
 
 NOTE: It is possible to share the access of just one application to any of the user
+
+######################
+
+SECURITY ADMIN ROLES: This can be assigned to someone if they do not want the system admin 
+to see their data
+
+ServiceNow platform for large companies is integrated with their Identity Provider services
+
+Managing user sessions
+ServiceNow offers multiple ways to manage user sessions. While administrators
+have the ability to impersonate any user, they can also completely lockout the
+user, make users inactive, or terminate any individual user session.
+
+Security
+As a best practice, I recommend not to directly assign roles to any user. Instead,
+we should first create a relevant group, if one doesn't already exist, and assign
+roles to this group. A group can have multiple roles assigned and also roles can
+contain other roles as needed. These features give an immense level of flexibility
+to the administrators and ensure that things do not get complex.
+Administrators can define the Access Control List (ACL) to limit read, write,
+create, and delete access for field data, records, and tables. With this granular
+security ability, you may need to create additional groups for elevated
+permissions
+
+
+UpdateSet is diffrent from Git in the Sense that, GIT is Version Control, 
+whereas UpdateSet is about caputring the development activvities
+
+Extending a Table: This is the standard of the ServiceNow architecture
+In the Control: select EXTENSIBLE checkbox
+
+This feature is used to implement the feature of Data Normalization.
+
+
+#Dictionary 
+The System Definition | Dictionary module has an entry for each table and
+column in the database. As direct access to the database is not provided to
+ServiceNow customers, the dictionary offers a way to access the information on
+the database schema. It is also referred to as the data dictionary.
+The Dictionary module lists data stored in the sys_dictionary table, referred to as
+the dictionary entry. It is equivalent to the database dictionary property of the
+tables and column objects in any RDBMS.
+############
+
+################# DAY 6 #######################
+
+#TABLE ADVANCED
+
+Extended Table is like the superset of Base Table 
+Extended Table = Base Table + Additional Fields
+
+Important to ensure that the the Base Table is marked as Extensible in the Controls
+
+Q: How to manage the roles Created along with the new roles?
+ANS: 
+
+The Primary benefit of Extending tables is that, it helps in applying Data Normalization
+Normalization means to not store the same data in multiple Tables
+To avoid data reduncancy
+
+# The Structure of the Table is copied in extending the Table and not the Data of the Table
+
+## Diffrences Between the original Table and the extended Table
+-> It is possible to delete the copied structure of the tables  
+    -> DO NOT DELETE this is as there will be an impact on the base fields
+
+-> additional row creation is also possible
+-> The controls are not passed on to the extended Table
+    -> it needs to be enabled seperately
+-> There are two sys IDs (but how are there two SYS IDs ????)
+    This Entry was created in the Extended Table
+        27403f8347a11110c68ca368436d435c
+    This entry was created in the base table by default
+        27403f8347a11110c68ca368436d435c
+
+-> The DataBase Indexes in the Extended table refer to the base table 
+
+Every Table has it's own autonumbering, when extending it will be turned off by default
+
+### ASSIGNMENT
+Find the Source Table for Incident, Change and Problem  
+TASK Table is the Source Table 
+
