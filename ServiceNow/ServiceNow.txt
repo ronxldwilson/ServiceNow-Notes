@@ -983,11 +983,50 @@ Miscellaneous:
 
 
 
+################## DAY 7 ##########################
+
+DATA LOADING CONCEPT / IMPORT SET
+
+What is Load Data?
+
+How to Load Bulk Records into any table?
+
+What are the Steps involved?
+
+0. DataLoad Template
+    -Preperation & Validation
+
+    Send a Template to the client to send the required data in this format in excel
+    
+1. Import Set
+2. Transform Map
+3. Tools used during the Transform Map  
+    a) Auto Map
+    b) Mapping Assist
+4. Transform the Target Table
+
+
+Benefits of Load Data?
+
+Use-Cases
+1. Adding new Users
+2. Update existing records and create those records which doesn't exist with refernce to 
+    the provided data
 
 
 
 
+# Creating a DataLoad Template for user load
+
+First Get the user records in excel format,
+once that is done, go to load data, to add the new records to table
+then select, what is to be done with it. If it needs to be added or not
 
 
+############### COALESCE
 
+Coalesce meaning defining the unique identifer
+Example: User id is defined as Coalesce that means system is instructd to find and update the record if it exists
+if it doesn't exist, then create the record
 
+###################
