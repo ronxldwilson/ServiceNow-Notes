@@ -1030,3 +1030,43 @@ Example: User id is defined as Coalesce that means system is instructd to find a
 if it doesn't exist, then create the record
 
 ###################
+
+No need to create the Transform Map againa and again, if the same data will be 
+used to add and update record field 
+
+Just ReRun the already created Transform Map to get the new data added to the table.
+
+
+
+- Implement New Customer 
+- Company Name : Rebooted 
+- Company will have the following "Foundation Data" 
+-   - Company 
+    - Departments - 20 Departments 
+    - Department Names : RBT DEPT-01 till RBT DEPT-20 
+    - Teams - 50 Teams - RBT GRP-01 till RBT GRP-50 
+    - Users - 1000 - Rebooted 01 till Rebooted 1001 
+    - User Roles 
+    - Location - 10 Location 
+    - Location Names : RBT LOC-01 till RBT LOC-10 Rebooted 01 to Rebooted 100 --> RBT GRP-01
+
+
+
+
+Location: cmn_location
+Department: cmn_department
+
+
+    To Shift the DATA between diffrent instancs is possible, firstly create find the data
+    which is to be shifted and then convert it to XML format, once that is done,
+    it can be shared to other instance as well.
+
+    To load an instance, go to the column header and then right-click and select
+    import, this will allow the import of the data, through an XML format
+
+########## LDAP: lightweight Directory Access Protocol
+
+LDAP is a central Repository of all the user related information
+It can be integrated with ServiceNow and Other Systems
+Benefits
+    Creation of users and their access can be automated
