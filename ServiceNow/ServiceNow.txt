@@ -953,7 +953,7 @@ TABLE NAMES FOR THE FOLLOWING FORMS
 PREFIXES IN TABLE
 1. sys : System Generated
 2. CMDB: Configuration Management related
-3. ALM : Asset life Management 
+3. ALM : Asset life Management          // used by asset Management team
 4. imp : Import set related
 5. u_ : User Defined
 6. SLA : Service Level Agreement
@@ -1070,3 +1070,50 @@ LDAP is a central Repository of all the user related information
 It can be integrated with ServiceNow and Other Systems
 Benefits
     Creation of users and their access can be automated
+
+
+Label: can be changed
+Name: Name is used in backend and CANNOT be changed
+
+###################### CMDB ######################
+
+ITOM - Inforamtion Technology Operations Management
+CMDB - Configuration Management Database
+
+CMDB stores CI's and it's relationships
+
+################ DAY 8 ##################
+
+############ ASSET MANAGEMENT ##############
+
+Types of ASSETS
+1. Hardware
+2. Consumable
+3. License
+4. Facility
+
+Note: any hardaware CI, the primary identifier is Serial Number
+
+Display Name: Asset Tag + Model Name
+Configuration Item: Serial Numeber + Model Name
+
+Asset LifeCycle 
+1. On order
+2. In Stock 
+3. In Transit
+4. In Use
+5. In Maintainece
+6. Retired 
+7. Missing 
+8. Build
+
+# Discovery Tools: These Tools scan the entire network and populate CMDB
+
+Examples of Discovery Tools
+    -ServiceNow Discovery Tools
+    -Device 42
+    -BMC Discovery
+
+CI Class Manager is a heirarchy of all the configuration items
+
+Serial Number is the unique identifier for Hardware Items
