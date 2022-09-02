@@ -1092,7 +1092,7 @@ Types of ASSETS
 3. License
 4. Facility
 
-Note: any hardaware CI, the primary identifier is Serial Number
+Note: for any hardaware CI, the primary identifier is Serial Number
 
 Display Name: Asset Tag + Model Name
 Configuration Item: Serial Numeber + Model Name
@@ -1107,7 +1107,7 @@ Asset LifeCycle
 7. Missing 
 8. Build
 
-# Discovery Tools: These Tools scan the entire network and populate CMDB
+# Discovery Tools: These Tools scan the entire network and populate CMDB table
 
 Examples of Discovery Tools
     -ServiceNow Discovery Tools
@@ -1117,3 +1117,6 @@ Examples of Discovery Tools
 CI Class Manager is a heirarchy of all the configuration items
 
 Serial Number is the unique identifier for Hardware Items
+
+
+CMDB Health : is a Dashboard which showcase the health of the CMDB
