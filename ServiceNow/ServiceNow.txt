@@ -1120,3 +1120,41 @@ Serial Number is the unique identifier for Hardware Items
 
 
 CMDB Health : is a Dashboard which showcase the health of the CMDB
+
+De-Duplication: 
+
+################## DAY 9 ##########################
+
+#Reporting and Dashboarding
+
+Report Types (Available under Report Section)
+1. Out of the Box reports - Those reports which are provided by the system
+2. Custom Reports - Reports created later
+
+
+In both the above scenario it is possible to edit both kinds of reports
+
+How to manage new Report creations
+
+# Dot Walking 
+- we can use any common reference field in the table 
+to refer the data in the other table
+
+Example: 
+
+
+DASHBOARD
+
+dashboard Contains Widgets
+Each widget is a report
+Reports are embeded on the dashboard
+Indicators are also called as Matrix
+
+Example: 
+1.  Create a dashboard : Ron_Dashboard
+    The Dashboard will contain all the information related to incident manangment 
+
+## SCHEDULED REPORT
+
+
+Possible to schedule the execution of report 
