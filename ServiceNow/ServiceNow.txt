@@ -1193,3 +1193,15 @@ The arrow mark in workflow is called as Transitions
 Each box is an activity
 
 On the side there is an option to add Core activities while designing new activities
+
+To modify an existing workflow you need to be in the Checkout state
+
+Workflow Versions - each time a workflow is cheked out and published it creates a new veriosn in Workflow Version
+
+##IMP: Workflows are implemented on certain Tables
+
+Request Table : sc_req_item
+
+Creating new workflow is simple, just got to workflow and click on add symbol
+and define the workflow based on the requirements
+
