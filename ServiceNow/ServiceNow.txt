@@ -1158,3 +1158,38 @@ Example:
 
 
 Possible to schedule the execution of report 
+
+## Sharing a report 
+Share the report with a group or with a particular user at a particular time
+
+
+####################### DAY 10 ####################
+
+Workflow & Service Catalog
+
+# WorkFlow - Used to automate the sequence of activities
+
+Example: used in SLA definitions
+Flow & Workflow
+
+2. Also available in change Management
+
+3. Problem Management 
+4. & knowledge Article
+
+
+Workflow -  It is a sequence of activities
+
+iN Filter Navigator -> Workflow Editor
+
+How to view the list of the workflows present in the system
+
+Two states of workflow
+1. Published - Currently in use
+2. Checked Out - Manintanince
+
+The arrow mark in workflow is called as Transitions
+
+Each box is an activity
+
+On the side there is an option to add Core activities while designing new activities
