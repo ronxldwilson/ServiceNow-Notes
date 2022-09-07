@@ -1332,5 +1332,40 @@ we have diffrent types of variables to be selected
 
 ############################ DAY 11 ########################
 
+These are the two ways End users are able to access ServiceNow
 
+Native UI: this is the servicenow instance 
+Portal UI: This is the service now Portal
+
+Types of service catalog variables
+
+    Attachment
+    Break
+    Check box
+    Container start, container split, and container end
+    Date
+    Date and time
+    Duration
+    Email
+    HTML
+    IP Address
+    Label
+    List collector
+    Lookup multiple choice
+    Lookup select box
+    Custom
+    Custom with label
+    Masked
+    Multi-line text
+    Multiple choice
+    Numeric scale
+    Reference
+    Requested For
+    Rich Text Label
+    Select box
+    Single-line text
+    UI page
+    URL
+    Wide single-line text
+    Yes/No
 
