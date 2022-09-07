@@ -1205,3 +1205,132 @@ Request Table : sc_req_item
 Creating new workflow is simple, just got to workflow and click on add symbol
 and define the workflow based on the requirements
 
+### Service Catalog
+##The point of service Catlog is that it decreases cost and increases efficiency.
+Through self service catlog cost and efficiency is improved
+->Hire the Employees
+->Maintain Assets
+->Location
+->software 
+->Internet Telephone
+
+Limitation
+    -> Delay in providing service
+
+>>> Service Catalog 
+
+	- Types of Service Catalog
+			- Service Catalog
+			- Record Producer
+			- Order Pr
+
+	
+1. Once the service catalog is executed it will produce 
+		REQ
+		RITM
+		SCTASK
+
+2. Service Catalog uses WorkFlow or Flow in the Backend
+	WorkFlow / Flow will provide the Backend Logic which controls the steos in the catalog execution
+
+
+--> Excercise - 
+		Similar to the Excercise of WorkFlow
+	Create a Service Catalogue to request for the new SOftware Installation on your laptop, while taking this request following questions to be Asked
+
+	Q1 : Requested for
+
+	Q2 : Name of the Software 
+		Choice 1 : Microsoft Projects
+		Choice 2 : Adobe Reader
+		Choice 3 : outlook
+	
+	Q3 : Joining Location 
+
+Solution : 
+
+	1. Filter Navigator --> Maintain Items
+	Maintain Items Shows all the different Catalogs or items which is OOTB
+
+	2. Click New to create a brand New Catalog
+
+	3. Add the Name : Request for the New Software Installation 
+
+		Here Catalogs is very important - It determines the Visibility 
+	
+	4. Choose Service Catalogs
+
+	5. Category --> Services
+
+	6. After creating this to use this Save this 
+
+	7. Go to the Service Portal and check for the catalog in the Office -- Services 
+
+	8. Then add the Description 
+
+	9. Process Engine - is the Backend Logic 
+						It is the WorkFlow
+						We have to make sure that the WorkFlow is in published State
+
+	10. Then picture the Look and Feel 
+
+	11. Pricing is not needed 
+
+	12. Go to Service Portal and check 
+
+To change Add to Cart, Quantity and Delivery Time 
+
+	13. Portal Settings and hide all that you dont need and also change the Request Method to Request
+
+--> Here most important is adding the catalog while creating catalog Item 
+	Else the Catalog will not appear in the Portal
+
+
+>> How to add the Questions in the Catalog
+
+	- Variables are like the fields in the Form Design
+	- It is used to add different questions here
+>> Variables - variables are the questions available on the catlog
+Used to recive input to requester
+we have diffrent types of variables to be selected
+    -> reference
+    -> String
+    -> Select Box
+
+	
+	14. New
+		Type --> Reference
+		Add Question
+		Name : u_
+
+		In the Type Specification add the reference table name
+
+	15. Add Second Question 
+		Type --> Select Box
+		Add Question 
+		Name : u_
+
+		Below it will allow to add choices 
+			- Click on New and all the choices
+			- Add the value for the choice also
+		
+		Choose Include None in the Type Specification
+
+		This will show the None Option by Default
+
+	16. Add Third Location 
+		Type --> Reference
+		Add Question 
+		Name : u_
+
+		Then in Type Specification add the reference table name
+
+	
+	17. Now check the Service Portal 
+
+
+
+############################ DAY 11 ########################
+
+
+
