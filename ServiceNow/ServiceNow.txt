@@ -1222,7 +1222,7 @@ Limitation
 	- Types of Service Catalog
 			- Service Catalog
 			- Record Producer
-			- Order Pr
+			- Order Guide
 
 	
 1. Once the service catalog is executed it will produce 
@@ -1339,23 +1339,26 @@ Portal UI: This is the service now Portal
 
 Types of service catalog variables
 
-    Attachment
-    Break
-    Check box
-    Container start, container split, and container end
-    Date
-    Date and time
-    Duration
-    Email
-    HTML
-    IP Address
-    Label
-    List collector
+    Attachment  - to attach files 
+    Break       -   To add a horizontal break line, kinda like <hr> in HTML
+    Check box   -    
+    Container 
+        - start
+        - container split
+        - container end
+    Date        -
+    Date and time -
+    Duration    - 
+    Email       -
+    HTML        -
+    IP Address  -
+    Label       -
+    List collector  
     Lookup multiple choice
     Lookup select box
-    Custom
+    Custom      -
     Custom with label
-    Masked
+    Masked      -
     Multi-line text
     Multiple choice
     Numeric scale
@@ -1368,4 +1371,22 @@ Types of service catalog variables
     URL
     Wide single-line text
     Yes/No
+
+## Testing of Service Catlog
+
+
+## Record Producer
+used to create Incident/ Change and Problem
+1. It does not use any workflow or flow in the backend 
+2. We use field mapping between the table selected and the record producer variables 
+3. 
+
+
+
+## Order Guide
+is the collection of service Catalogs
+Creates only 1 REQ and multiple RITM under that 
+
+Once you execute an order guide many of the catalogs will be executed within it
+Rule Base is the area usin which you can define the catalogs within the order guide
 
