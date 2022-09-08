@@ -1390,3 +1390,82 @@ Creates only 1 REQ and multiple RITM under that
 Once you execute an order guide many of the catalogs will be executed within it
 Rule Base is the area usin which you can define the catalogs within the order guide
 
+############# Day 12 ################
+
+# CLIENT SIDE SCRIPTING
+
+Client is the Web Browser which has the frontend as forms in ServiceNow
+Server has the Tables which is the backend for serviceNow
+
+Server Side Programs
+    - Data Policy
+        Data Policy Contains various Data policy rules
+        Data Policy can be specifically allotted to a sepcific form when certain conditions are met
+        Data Policy is Dynamic in nature. The field properties available are:
+            - mandatory
+            - Read only
+
+    - 
+Client Side Programs
+    - UI Policy
+    - Benefits of UI Policy
+        -Reduces the load of the Server
+        -More fields are available
+            - mandatory
+            - Read only
+            - Visibility
+
+UI Policy is the best way to move forward 
+
+# There is an option to convert any Data Policy to convert to UI Policy (Available in Data Policy List [within it])
+
+#Configuration
+Developing a new featuere without code. Using OOTB Functionalities
+
+#Customization
+OOTB Functionalities doesn't support to build the new feature 
+We have to develop the feature by writing a piece of code
+
+
+Server Side Programs    |   Client Side Scripts
+1. Data Policy          |   Ui policy
+2. Business Rule        |   Client Side Scripts *
+3. ACL(Access Control l)|
+4. UI Actions           |
+5. Server Side Scripts* |
+6. Schedule Jobs*       |
+7. Background Scripts*
+8. Fix Script*
+9. Script Include*
+
+* All part of Customization
+
+UI policy and Business rule is of atmost importance 
+
+### Business Rules ###
+
+A BR is executed when there is a Database Transactions
+Transactions are of different types:
+    Insert a new record
+    Update an existing record
+
+Types of BR:
+1. Before BR
+2. Afte BR
+3. Async BR         Very IMPORTANT
+4. Display BR
+
+Usecase of BR:
+
+Any Incident created with 
+    Category: Hardware
+    Sub Category: Disk
+
+    following fields should be auto filled.
+
+    Assignment group: Hardware
+    description: Hardware team request. please prioritize
+    state: set to inprogress
+
+
+If A BR is not Defined by default it will be Before BR
