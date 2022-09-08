@@ -1427,16 +1427,17 @@ OOTB Functionalities doesn't support to build the new feature
 We have to develop the feature by writing a piece of code
 
 
-Server Side Programs    |   Client Side Scripts
-1. Data Policy          |   Ui policy
-2. Business Rule        |   Client Side Scripts *
-3. ACL(Access Control l)|
-4. UI Actions           |
-5. Server Side Scripts* |
-6. Schedule Jobs*       |
-7. Background Scripts*
-8. Fix Script*
-9. Script Include*
+Server Side Programs        |   Client Side Scripts
+1. Data Policy              |   Ui policy
+2. Business Rule            |   Client Side Scripts *
+3. ACL(Access Control l)    |
+4. UI Actions               |
+4. Notifications            |
+5. Server Side Scripts*     |
+6. Schedule Jobs*           |
+7. Background Scripts*      |
+8. Fix Script*              |
+9. Script Include*          |
 
 * All part of Customization
 
@@ -1469,3 +1470,83 @@ Any Incident created with
 
 
 If A BR is not Defined by default it will be Before BR
+
+
+## ACL: Access Control List
+
+Four operations of ACL  
+    Read 
+    Write 
+    Create 
+    Delete
+
+#Security Admin Role 
+    - Security admin Role Required to work with ACL
+    - Available under elevated roles
+    - It is a Temporary Role, valid untill session is Active
+    - ACLs can be modified to control access to users
+
+Email Notification
+--------------------
+
+- Based on the condition servicenow system will automatically trigger a notification
+- whoever is added in the recepient list all of them will receive a notification
+- Receipient can be: It can be a group or individual
+
+Navigate: Filter Navigator
+
+Usecase: Create a notification which will run based on the following condition
+
+condition: any incident created with category Hardware, sub category CPU
+
+Who will receive the notification: members of the Hardware Team
+
+Notification Body:
+
+Hi <Hardware Team>
+
+<Incident#> assigned to your team with <Priority> needs attention.
+<Asssigned To>
+
+Regards,
+System Generated email. Don't Reply
+
+
+Assignment:
+
+Usecase: Create a Notification to send the user id and password to the servicedesk for newly created users.
+
+condition: any user created for company ACME Australia
+
+Who will receive the notification: Service Desk
+
+Notification Body:
+
+Hi Service Desk,
+
+Please find the details of the newly created user.
+
+user id:
+email id:
+password:*******
+
+note: Reset the password after first login.
+
+Thanks,
+System
+
+########### UI Actions #############
+
+UI Actions is part of both customization and configuration
+It is part of both server side and client side SCRIPTING
+
+UI Action: On click there should be some action which happens on Server side and Client side
+
+##################
+
+Assignment: 15 min 
+TIme till: 05:15pm
+
+Create a button on the incident form
+button name: create Problem
+on click of that button it should create a problem ticket
