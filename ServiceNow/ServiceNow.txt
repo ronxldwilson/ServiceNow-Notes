@@ -133,7 +133,7 @@ Types of Users
 HW: Create a new user. What is the application access doing the new user have?
 SOLUTION: 
 
-############ Day 2######################
+############ DAY 2######################
 
 VM: Virtual Machine 
 
@@ -385,7 +385,8 @@ Different ways to create user account.
 4. SSO (Single Sign On)
         - SML certificate is issued
         - external third-party providers
-5. Use of workday is also possible for Integration of user record creation
+5. Use of work
+ is also possible for Integration of user record creation
  
 
 
@@ -480,7 +481,7 @@ makes them part of a separate group in which they can talk among themselves
 # It is also possible to read up on the incident history and check logs of when something was 
 updated and when, to resolve any conflicts between the groups
 
-#################### Day 4 ############################
+#################### DAY 4 ############################
 
 ## SLA: Service Level Agreement
 
@@ -565,7 +566,9 @@ How to Create New schedile
 2. Then go to create 
 ########## HW ###########
 
-Create a Schedule for 9-6 weekdays excluding holidays(India Calendar) (Aug- Dec)
+Create a Schedule for 9-6 week
+s excluding holi
+s(India Calendar) (Aug- Dec)
 
 ## ITSM Suites
 1. Incident Management
@@ -672,7 +675,7 @@ and is a bad remark on the working of the board.
 
 Create a Standard Change Template
 
-################### Day 5 #####################
+################### DAY 5 #####################
 
 Development in ServiceNow
 
@@ -786,7 +789,7 @@ in the other end, you can get all the upodate sets to this
 
 Whenever there is a new Table which is created it comes with "U_"
 
-To give access of a particular applicatio to a user, just give the role to the user of that particular Application
+To give access of a particular application to a user, just give the role to the user of that particular Application
 
 
 # SYS_ID is the unique identifier for all the records
@@ -1082,7 +1085,8 @@ CMDB - Configuration Management Database
 
 CMDB stores CI's and it's relationships
 
-################ DAY 8 ##################
+################ 
+ 8 ##################
 
 ############ ASSET MANAGEMENT ##############
 
@@ -1390,7 +1394,7 @@ Creates only 1 REQ and multiple RITM under that
 Once you execute an order guide many of the catalogs will be executed within it
 Rule Base is the area usin which you can define the catalogs within the order guide
 
-############# Day 12 ################
+############# DAY 12 ################
 
 # CLIENT SIDE SCRIPTING
 
@@ -1399,6 +1403,7 @@ Server has the Tables which is the backend for serviceNow
 
 Server Side Programs
     - Data Policy
+        Data Policy runs on server side
         Data Policy Contains various Data policy rules
         Data Policy can be specifically allotted to a sepcific form when certain conditions are met
         Data Policy is Dynamic in nature. The field properties available are:
@@ -1431,7 +1436,7 @@ Server Side Programs        |   Client Side Scripts
 1. Data Policy              |   Ui policy
 2. Business Rule            |   Client Side Scripts *
 3. ACL(Access Control l)    |
-4. UI Actions               |
+4. UI Actions               |   UI Actions 
 4. Notifications            |
 5. Server Side Scripts*     |
 6. Schedule Jobs*           |
@@ -1550,3 +1555,94 @@ TIme till: 05:15pm
 Create a button on the incident form
 button name: create Problem
 on click of that qbutton it should create a problem ticket
+
+
+######################## DAY 13 #################
+
+Scripting in ServiceNow
+
+We should do scripting whenever we are Unable to develop a new feature/Functionality
+using OOTB features(Configuration) then only we should go for Scripting (Customization)
+
+That is why serviceNow is called Low Code or No Code mechanism
+meaning: without writing the code we can develop a new feature or application
+
+Cause more code requires more Maintainece
+
+ServiceNow uses scripting and not programming
+    -JS is used to develop a new feature in serviceNow
+
+Diffrence between programming VS scripting
+    1. Programming langauages uses compiler to convert the code into a machine 
+        understandable 
+    2. In scripting there is no compiler, we use interpreter
+    3. 
+
+What are the areas where we can script in serviceNow?
+
+    - UI Policy (Available in related links under ADVANCED tag)
+    - ACL
+    - Notification
+    - UI Actions
+    - Business Rule
+    
+
+##Glide Framework
+
+It is a JS Library, which contains prebuilt code 
+Benefits: 
+    Developers no need to code/develop featuers from scrtach
+    If a predefined function is available we can just use it    
+        -It saves development time
+        -Testing time 
+        -facilitate a better application development
+
+it provides predefined Library of functions which can be used inside the servicenow application developement
+
+
+It's called as Glide as ServiceNow was initially called as Glide Software
+
+Glide FrameWork Supports both Client side and Server side scripting
+
+Client Side Scripting
+    Its generally related to forms 
+    
+    Client Script allows the client's browser to take up some of the burdens on the 
+    web servers while running a web application
+    
+    Benefit:
+        1. The application works faster and responsive
+        2. aka Faster and more Responsive Web application
+
+    Functions avaible under g_form
+        Showing a info message 
+        To show a error message
+        Add choices/Remove choices during the runtime 
+        Make the field properties related changes
+            -Mandatory 
+            -Read Only
+            -Visibility
+        + many more features
+
+    Usecase: Show that "Bank Information is needed"
+    UI Type: is used to define on which kind of device it will work
+    Types of Client Script:
+        onLoad()        -   
+        onChange()      -   
+        onSubmit()      -   
+        onCellEdit()    -   
+            Top 3 are frequently used
+
+
+    API used for form: g_form
+
+    User Related API: g_user
+
+
+
+Server Side Scripting
+    Glide Records: Used To query data from the tables 
+    Glide System: 
+    Glide Aggregate: Used when there is a need for aggregating on the records 
+    Glide Date and Time:
+
