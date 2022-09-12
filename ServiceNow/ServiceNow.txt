@@ -1627,15 +1627,43 @@ Client Side Scripting
     Usecase: Show that "Bank Information is needed"
     UI Type: is used to define on which kind of device it will work
     Types of Client Script:
-        onLoad()        -   
-        onChange()      -   
-        onSubmit()      -   
-        onCellEdit()    -   
-            Top 3 are frequently used
+        onLoad()        -   This kind of script is executed when the form is loaded
+        onChange()      -   This kind of script is executed when one of the fields is changed
+            Exercise:
+                Any change in category value must make the following changes
+                    - Clear if there is any value in service
+                    - service value as mandatory 
+            Exercise:
+                Create a Table: Table name is "Name"
+                This table is extended from the user table 
+
+                Example: Any change on language should make 
+                    - the timezone mandatory
+                    - password needs to be reset should be checked
+
+
+        onSubmit()      -   This kind of script is executed when the form submitted
+            - It is used when we are submitting a record and want to validate the entries
+            - Before accepting the record the system will validate before accepting it
+            Exercise:
+                Add two fields: 
+                    - Joining Date and Reliving Date
+                    - If the joining date is greater than the relieving date
+                    There should be a message: "Invalid joining Date"
+
+                    - If the joining date is lesser than the relieving date
+                    There should be a message: "Thanks for submitting
+                    
+
+
+        onCellEdit()    -    This is used in the List View operations
+                For example -    
+                In the app we can edit the FirstName, Lastname etc.. from the list view itself
+                This is due to the On Cell Edit in the Background
+                This is not Frequently used
 
 
     API used for form: g_form
-
     User Related API: g_user
 
 
@@ -1646,3 +1674,110 @@ Server Side Scripting
     Glide Aggregate: Used when there is a need for aggregating on the records 
     Glide Date and Time:
 
+When does a server side script run? Whenever there is a database transaction or a call
+then the server side script runs
+
+What are the areas where we write the server side scripts
+1. Schedule Jobs
+2. Business Rule
+3. Script Include
+4. Background Script
+5. Fix Script
+6. Server Side Script(Workflow)
+
+Usecase: Show all user records belonging to company ACME Africa and ACME Australia
+
+Query: company=df7d53303710200044e0bfc8bcbe5dac^ORcompany=86c1f3193790200044e0bfc8bcbe5d95
+
+### Glide Record ###
+Glide Record must be used in any server side program that will be written
+
+Syntax: 
+    Var gr = newGlideRecord(<Table Name>);
+    // We are gliding the <name> table
+
+gs - glide system
+
+
+### Background Scripts ###
+It is used to run the server side Programs
+Can't save the code in the Background script
+
+        Code addEncodedQuery
+            var gr = new GlideRecord('incident');
+            gr.addEncodedQuery('priority=1^state=2^ORstate=3'); //This query is found thru filter in list ADMINISRATION
+            gr.query();
+            while(gr.next()){
+                gs.addInfoMessage("The Incident is: ",+ gr.number);
+            }
+
+        Code addQuery() - Used to query the database and fetch the records
+
+        Usecase:m Show all the incidents which are creatred with Short Desc "ATF: Test 1"
+            (function executeRule(current, previous /*null when async*/) {
+
+                // Add your code here
+                var gr = new GlideRecord('incident');
+                gr.addQuery('short_description','ATF : Test1');
+                
+                gr.query();
+                while(gr.next()){
+                    gs.addInfoMessage("The Incident Number is"+gr.number);
+                }
+                
+            })(current, previous);
+
+
+ 
+
+
+ (function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var gr = new GlideRecord('incident');
+	gr.addQuery('priority','1');
+	gr.addQuery('priority','2');
+	
+	gr.query();
+	while(gr.next()){
+		gs.addInfoMessage("The Incident Number is"+gr.number);
+	}
+	
+})(current, previous);
+
+
+
+
+
+
+
+
+
+    var gr = new GlideRecord('incident');
+        gr.addQuery('priority','1','2');
+        gr.query();
+
+
+
+       while(gr.next)
+        {
+            gs.addInfoMessage('The Incident with Priority 1 or 2 is :'+gr.number);
+        }
+
+
+
+
+
+
+(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var gr = new GlideRecord('incident');
+	gr.addQuery('priority', '<=', 2)   
+	
+	gr.query();
+	while(gr.next()){
+		gs.addInfoMessage("The Incident Number is"+gr.number);
+	}
+	
+})(current, previous);
