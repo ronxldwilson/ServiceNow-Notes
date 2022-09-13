@@ -1727,57 +1727,30 @@ Can't save the code in the Background script
                 
             })(current, previous);
 
+            Usecases: Show all incidents with pritority 1 or 2
+            //addQury() 
+            //Syntax: gr.addQuery(fieldname, operator, value);
 
- 
+            (function executeRule(current, previous /*null when async*/) {
 
-
- (function executeRule(current, previous /*null when async*/) {
-
-	// Add your code here
-	var gr = new GlideRecord('incident');
-	gr.addQuery('priority','1');
-	gr.addQuery('priority','2');
-	
-	gr.query();
-	while(gr.next()){
-		gs.addInfoMessage("The Incident Number is"+gr.number);
-	}
-	
-})(current, previous);
-
+                // Add your code here
+                var gr = new GlideRecord('incident');
+                gr.addQuery('priority', '<=', 2)   
+                
+                gr.query();
+                while(gr.next()){
+                    gs.addInfoMessage("The Incident Number is"+gr.number);
+                }
+                
+            })(current, previous);
 
 
+########### Day 15 #####################
 
+Glide System
 
+Glide Aggregate:
 
+Usecase: Find total number of records present in the incident table
 
-
-
-    var gr = new GlideRecord('incident');
-        gr.addQuery('priority','1','2');
-        gr.query();
-
-
-
-       while(gr.next)
-        {
-            gs.addInfoMessage('The Incident with Priority 1 or 2 is :'+gr.number);
-        }
-
-
-
-
-
-
-(function executeRule(current, previous /*null when async*/) {
-
-	// Add your code here
-	var gr = new GlideRecord('incident');
-	gr.addQuery('priority', '<=', 2)   
-	
-	gr.query();
-	while(gr.next()){
-		gs.addInfoMessage("The Incident Number is"+gr.number);
-	}
-	
-})(current, previous);
+Syntax: var agg = new GlideAggregate('tablename');
