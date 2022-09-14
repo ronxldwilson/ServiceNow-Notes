@@ -1754,3 +1754,48 @@ Glide Aggregate:
 Usecase: Find total number of records present in the incident table
 
 Syntax: var agg = new GlideAggregate('tablename');
+
+ (function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var agg = new GlideAggregate('sys_user');
+	agg.addAggregate('COUNT');
+	agg.query();
+	var counter = 0;
+	
+	while(agg.next()){
+		counter = agg.getAggregate('COUNT');
+	}
+	gs.addInfoMessage(" Total Number of Users is: "+counter);
+	
+	
+})(current, previous);
+
+
+var gr = new GlideRecord('u_ronald');
+	
+	var string1 = gr.getValue('u_joining_date');
+	var string2 = gr.getValue('u_relieving_date');
+
+	var jdate = new GlideDateTime(string1);
+	var rdate = new GlideDateTime(string2);
+	
+	var total = GlideDateTime.subtract(jdate, rdate);
+	
+	gs.addInfoMessage("Total time worked is: "+ total );
+
+
+###### Fixed Script ##########
+
+###### Script Include
+It is used to store the JS functions and classes 
+Script include can be called from any other program both server side and client side
+Script Include can be called from:
+    1. Business rules   
+    2. UI Actions
+    3. Other Script Include as well 
+    4. It can also be called form the client side(Called as Glide AJAX)
+    
+Usecases: Create a Script Include
+    Find the addition of 2 numbers
+    
