@@ -6,18 +6,18 @@ ITSM: Information Technology Service Management
 ITSM ATF - Automation Testing Framework
 PDI- Personal Developer Instance (Lab for experimentation)
 
-MORPHIUS - Cloud automation Tool. Which can be used to monitor the consumption in the Cloud based Servic  
+MORPHEUS - Cloud automation Tool. Which can be used to monitor the consumption in the Cloud based Servic  
 FLEXERA - Software Asset Management Tool
 
-Being a cloud product, we need to subscribe access to service now
+Being a cloud product, we need to subscribe access to the service now
 
-Service Now is a cloud-based platform which provides ITSM. 
+Service Now is a cloud-based platform that provides ITSM. 
 
 ITIL is the underlying concept on which ITSM is built, 
 kind of like how OOPS is the underlying concept for programming languages.
 
 #Competitiors to ServiceNow 
-    1. BMC's Tool - Remedy (good for on premise hosting) (Self Hosted)
+    1. BMC's Tool - Remedy (good for on-premise hosting) (Self Hosted)
     2. Jira by Atlassian
     3. FreshWorks
 
