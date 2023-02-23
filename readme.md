@@ -1,6 +1,3 @@
-This repo contains notes on Information Technology Service Management. Refer to them and feel free to contribute
+ServiceNow Notes
 
-What is ITSM? 
-
-ITSM stands for Inforamtion Technology Service Management. It is the activities which are performed by an orgnization to design, build, deliver, operate, and control information technology services offered to the custometer.
-
+Feel free to add to them by opening a PR
